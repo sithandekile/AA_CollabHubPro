@@ -1,9 +1,9 @@
 import React from 'react'
 import design from '../assets/design.png'
-import icon4 from '../assets/icon4.png'
-import icon5 from '../assets/icon5.png'
-import icon6 from '../assets/icon6.png'
-import icon7 from '../assets/icon7.png'
+import icon4 from '../assets/Icon4.png'
+import icon5 from '../assets/Icon5.png'
+import icon6 from '../assets/Icon6.png'
+import icon7 from '../assets/Icon7.png'
 
 export const WhyCollabHub = () => {
   return (
