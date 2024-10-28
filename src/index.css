@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: Open Sans;
+  overflow-x: hidden;
+}
+:disabled{
+background:gray !important;
+}
