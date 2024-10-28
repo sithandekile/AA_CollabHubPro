@@ -1,12 +1,12 @@
  import React from 'react'
- import heroImage from '../assets/HeroImage (2).png'
+ import heroImage from '../assets/HeroImage2.png'
  import { useNavigate } from 'react-router-dom'
 import avarta from '../assets/avarta.png'
-import avarta1 from '../assets/avarta (1).png'
-import avarta2 from '../assets/avarta (2).png'
- import avarta3 from '../assets/avarta (3).png'
+import avarta1 from '../assets/avarta1.png'
+import avarta2 from '../assets/avarta2.png'
+ import avarta3 from '../assets/avarta3.png'
 import brands from '../assets/Brands.png'
-import avarta4 from '../assets/avarta (4).png'
+import avarta4 from '../assets/avarta4.png'
 
  export const Hero = () => {
 

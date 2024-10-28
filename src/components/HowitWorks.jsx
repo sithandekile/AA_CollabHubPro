@@ -1,9 +1,9 @@
 import React from 'react'
-import icon3 from '../assets/icon (3).png'
- import icon2 from '../assets/icon (2).png'
- import icon1 from '../assets/icon (1).png'
+import icon3 from '../assets/icon3.png'
+ import icon2 from '../assets/icon2.png'
+ import icon1 from '../assets/icon1.png'
  import icon from '../assets/icon.png'
-import { DiHtml5DeviceAccess } from 'react-icons/di'
+// import { DiHtml5DeviceAccess } from 'react-icons/di'
 export const HowitWorks = () => {
   return (
     <>
