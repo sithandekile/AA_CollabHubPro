@@ -75,7 +75,7 @@ export const Testimonials = () => {
   };
 
   return (
-    <div className="testimonials-container  pr-20 mt-16 mb-4 bg-[#EEF5F1]">
+    <div className="testimonials-container  pr-20 my-16 bg-[#EEF5F1]">
       <div className='text-center'>
       <h1 className='font-bold text-[40px] text-[#393939]'>What Our Users Say</h1>
       <p className='font-normal text-[20px] text-[#5E5E5E]'>Discover how CollabHub has made a difference in the careers of our users</p></div>
@@ -100,9 +100,9 @@ export const Testimonials = () => {
       </div>
 
       {/* Navigation Arrows */}
-      <div className="flex justify-center items-center mt-6 space-x-6 text-white">
-        <IoIosArrowBack  onClick={handlePrev} className="cursor-pointer text-2xl text-gray-500 hover:text-gray-700 bg-[#174A33]" />
-        <IoIosArrowForward  onClick={handleNext} className="cursor-pointer text-2xl text-gray-500 hover:text-gray-700 bg-[#174A33]" />
+      <div className="flex justify-center items-center mt-6 space-x-6 ">
+        <IoIosArrowBack  onClick={handlePrev} className="cursor-pointer text-2xl text-gray-500 hover:text-gray-700 bg-[#174A33] text-white" />
+        <IoIosArrowForward  onClick={handleNext} className="cursor-pointer text-2xl text-gray-500 hover:text-gray-700 bg-[#174A33] text-white" />
       </div>
     </div>
   );

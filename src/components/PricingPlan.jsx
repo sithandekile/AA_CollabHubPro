@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Pricing = () => {
   return (
-    <section className='my-8'>
+    <section className='my-16'>
       <h1 className='text-[40px] font-bold text-[#333] font-sans'>Pricing Plans</h1>
       <p className='text-[20px] text-[#5C5C5C] font-normal font-sans pb-5'>Choose a plan that fits your needs</p>
       <div className='grid grid-cols-3 gap-2 items-center '>
