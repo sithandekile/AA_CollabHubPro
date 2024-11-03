@@ -56,10 +56,10 @@ export const Verify = () => {
         <h1 className='font-bold text-2xl sm:text-3xl md:text-4xl mb-4'>Verify Your E-mail</h1>
         <p className='font-normal text-lg sm:text-xl'>{verificationStatus || 'To complete your registration, please check your inbox for the verification email from CollabHub.'}</p>
         
-        <p className='absolute right-4 bottom-[10%] font-normal text-lg sm:text-xl'>Haven't gotten an email?</p>
+        <p className='absolute right-4 bottom-[20%] font-normal text-lg sm:text-xl'>Haven't gotten an email?</p>
         
         <button 
-          className='flex justify-center items-center bg-[#1D6D31] text-white mt-4 w-full rounded-md p-4'
+          className='flex justify-center items-center bg-[#174A33] text-white mt-4 w-full rounded-md p-4'
           onClick={() => navigate('/login')} // Redirect to login after verification
         >
           Continue to Login

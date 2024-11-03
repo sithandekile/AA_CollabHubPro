@@ -134,11 +134,11 @@ export const Login = () => {
           </div>
 
           <button
-            className='border-2 border-gray-500 p-2 rounded-md w-full focus:outline-none text-[#fff] bg-[#1D6D31] text-[20px]'
+            className='border-2 border-gray-500 p-2 rounded-md w-full focus:outline-none text-[#fff] bg-[#174A33] text-[20px]'
             type='submit'
             disabled={!isValid || loading}
           >
-            {loading ? 'Signing In...' : 'Sign in'}
+            {loading ? 'Signing Up...' : 'Sign up'}
           </button>
 
           <div className='pt-4 text-sm'>

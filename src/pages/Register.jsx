@@ -155,7 +155,7 @@ export const Register = () => {
           </div>
 
           <button
-            className='border-2 p-2 rounded-md w-full focus:outline-none text-white bg-green-600 text-lg'
+            className='border-2 p-2 rounded-md w-full focus:outline-none text-white bg-[#174A33] text-lg'
             type='submit'
             disabled={isSubmitting || !isValid || loading}
           >
