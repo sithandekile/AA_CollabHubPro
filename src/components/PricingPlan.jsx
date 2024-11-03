@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Pricing = () => {
   return (
-    <section className='my-16'>
+    <section className='my-16 max-w-screen-lg mx-auto px-4 py-8'>
       <h1 className='text-[40px] font-bold text-[#333] font-sans text-center'>Pricing Plans</h1>
       <p className='text-[20px] text-[#5C5C5C] font-normal font-sans pb-5 text-center'>Choose a plan that fits your needs</p>
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-center justify-items-center'>

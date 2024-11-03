@@ -8,12 +8,12 @@ import icon7 from '../assets/Icon7.png';
 export const WhyCollabHub = () => {
   return (
     <section className='bg-[#EEF5F1] my-16 relative'>
-      <h1 className='text-center text-[40px] font-bold absolute top-[] left-[50%] transform -translate-x-1/2 -translate-y-1/2'>Why Join Collab<span className='text-[#FFC107] font-bold'>Hub?</span></h1>
+      <h1 className='text-center text-[40px] font-bold absolute top-[11%] left-[60%] transform -translate-x-1/2 -translate-y-1/2 max-w-screen-lg mx-auto px-4 py-8'>Why Join Collab<span className='text-[#FFC107] font-bold'>Hub?</span></h1>
       <div className='grid grid-cols-1 md:grid-cols-2 items-center'>
         <div className='order-1 md:order-1'>
           <img src={design} alt="Design Illustration" />
         </div>
-        <div className='grid grid-cols-2 gap-2 md:grid-cols-2 order-2 md:order-2'>
+        <div className='grid grid-cols- gap-2 md:grid-cols-2 order-2 md:order-2'>
           <div className='shadow-lg border-2 border-gray rounded-md p-2 bg-white h-full'>
             <div><img src={icon4} alt="Real World Experience" /></div>
             <h5 className='font-bold text-[20px]'>Real World Experience</h5>

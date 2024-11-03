@@ -7,7 +7,7 @@ import icon from '../assets/icon.png';
 export const HowitWorks = () => {
   return (
     <>
-      <h1 className='mt-16 font-bold text-[#393939] text-[40px]'>How It Works</h1>
+      <h1 className='mt-16 font-bold text-[#393939] text-[40px] max-w-screen-lg mx-auto px-4 py-8'>How It Works</h1>
       <h5 className='font-normal text-[#4B4B4B] text-[18px] pb-4'>Get started in our platform in just a few easy steps</h5>
       <div className='grid grid-cols-2 md:grid-cols-4 gap-4'>
         <div className='shadow-md border-gray border-2 rounded-md text-center p-4'>

@@ -12,7 +12,7 @@ export const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <section className='px-4 md:px-8 mt-16'>
+    <section className=' md:px-8 mt-16 max-w-screen-lg mx-auto px-4 py-8'>
       <div className='flex flex-col md:flex-row items-center justify-between'>
         <div className='order-2 md:order-1 mt-8 md:mt-0 md:w-1/2'>
           <h1 className='text-[#5E5E5E] text-[32px] md:text-[40px] font-bold'>

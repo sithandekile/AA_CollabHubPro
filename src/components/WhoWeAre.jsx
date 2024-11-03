@@ -4,7 +4,7 @@ import whowe from '../assets/Whowe.png';
 
 export const WhoWeAre = () => {
   return (
-    <section className='px-4 md:px-10 py-8'>
+    <section className='px-4 md:px-10 py-8 max-w-screen-lg mx-auto '>
       <h1 className='font-bold text-[32px] md:text-[40px] text-[#1E1E1E] py-1'>Who We Are</h1>
       <div className='flex flex-col md:flex-row items-center mt-8 space-y-4 md:space-y-0 md:space-x-4'>
         <div className='flex-shrink-0'>
