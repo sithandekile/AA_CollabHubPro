@@ -26,11 +26,10 @@ export const Register = () => {
 
   const onSubmit=async()=>{
     setLoading(true);
-    alert(values)
 
     
      try{
-       await axios.post('url',values)
+       await axios.post('https://collabhub-c0vc.onrender.com/users/register',values)
       
      } 
       catch(error){

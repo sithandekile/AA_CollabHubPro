@@ -25,25 +25,25 @@ export const Footer = () => {
       <div>
         <h5 className='font-sans font-bold text-[20px]'>Platform</h5>
         <div className='text-[20px] font-normal font-sans flex flex-col items-center p-2'>
-        <a href='/how it works'>How it works</a>
-        <a href='/contact us'>Pricing</a>
-        <a href='/faqs'>Blog</a>
+        <Link to ='/how it works'>How it works</Link>
+        <Link to='/contact us'>Pricing</Link>
+        <Link to='/faqs'>Blog</Link>
       </div>
       </div>
        <div>
         <h5 className='font-sans font-bold text-[20px]'>Support</h5>
         <div className='text-[20px] font-normal font-sans flex flex-col items-center p-2'>
-        <a href='/help center'>Help Center</a>
-        <a href='/contact us'>Contact Us</a>
-        <a href='/faqs'>FAQs</a>
+        <Link to='/help center'>Help Center</Link>
+        <Link to='/contact us'>Contact Us</Link>
+        <Link to='/faqs'>FAQs</Link>
       </div>
        </div> 
       <div className='flex flex-col items-center'>
         <h5 className='font-sans font-bold text-[20px]'>Legal</h5>
         <div className='text-[20px] font-normal font-sans flex flex-col items-center p-2'>
-        <a href='/privacy'>Privacy Policy</a>
-        <a href='/terms'>Terms of Service</a>
-        <a href='/faqs'>FAQs</a>
+        <Link to='/privacy'>Privacy Policy</Link>
+        <Link to='/terms'>Terms of Service</Link>
+        <Link to='/faqs'>FAQs</Link>
       </div>
       </div>
 

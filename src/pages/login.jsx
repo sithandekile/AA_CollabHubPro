@@ -6,6 +6,7 @@ import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate for 
  import login from '../assets/loginImage.png';
 import { Formik,useFormik } from 'formik';
 import * as yup from 'yup'
+import axios from 'axios'
 
 const validationSchema= yup.object().shape({
   username: yup.string().required(),
@@ -24,10 +25,16 @@ export const Login = () => {
     setTogglePassword(!togglePassword);
   };
 
-  const onSubmit=()=>{
+  const onSubmit=async()=>{
     setLoading(true)
     console.log(values)//this is where authentication will take place
-    
+    try{
+      await axios.post('url',values)
+
+    }
+    catch(error){
+    console.log(error.message)
+    }
     setTimeout(() => {
       setLoading(false);
       navigate('/verify');
