@@ -49,27 +49,17 @@ export const Verify = () => {
 
   return (
     <div 
-      className='h-screen flex items-center justify-center bg-cover bg-center text-[black]'
+      className='h-screen flex items-center justify-center bg-cover bg-center text-black'
       style={{ background: `url(${Verify_PopupImage})` }}
     >
-      <div className='relative bg-[#fff] rounded-md w-[30vw] p-8 h-[60vh] flex flex-col justify-center items-center text-center'>
-        <h1 className='font-bold text-[40px]'>Verify Your E-mail</h1>
-        <p className='font-normal text-[20px]'>{verificationStatus || 'To complete your registration, please check your inbox for the verification email from CollabHub.'}</p>
+      <div className='relative bg-white rounded-md p-6 sm:p-8 w-[90%] sm:w-[50vw] md:w-[40vw] lg:w-[30vw] h-auto sm:h-[60vh] flex flex-col justify-center items-center text-center'>
+        <h1 className='font-bold text-2xl sm:text-3xl md:text-4xl mb-4'>Verify Your E-mail</h1>
+        <p className='font-normal text-lg sm:text-xl'>{verificationStatus || 'To complete your registration, please check your inbox for the verification email from CollabHub.'}</p>
         
-        <p className='absolute right-4 bottom-[10%] font-normal text-[20px]'>Haven't gotten an email?</p>
+        <p className='absolute right-4 bottom-[10%] font-normal text-lg sm:text-xl'>Haven't gotten an email?</p>
         
-        {/* <button  *
-          className='flex justify-center items-center bg-[#174A33] text-[#fff] mt-10 w-full rounded-md p-4'
-          onClick={resendVerificationEmail}
-          disabled={resendLoading}
-        >
-          {resendLoading ? 'Resending...' : 'Resend Verification Email'}
-        </button>
-
-        // {resendMessage && <p className='text-red-500 mt-2'>{resendMessage}</p>*/}
-
         <button 
-          className='flex justify-center items-center bg-[#1D6D31] text-[#fff] mt-4 w-full rounded-md p-4'
+          className='flex justify-center items-center bg-[#1D6D31] text-white mt-4 w-full rounded-md p-4'
           onClick={() => navigate('/login')} // Redirect to login after verification
         >
           Continue to Login
