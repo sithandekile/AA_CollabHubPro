@@ -12,9 +12,9 @@ export const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <section className=' md:px-8 mt-16 max-w-screen-lg mx-auto px-4 py-8'>
-      <div className='flex flex-col md:flex-row items-center justify-between'>
-        <div className='order-2 md:order-1 mt-8 md:mt-0 md:w-1/2'>
+    <section className='md:px-8 mt-16 max-w-screen-lg mx-auto px-4 py-8'>
+      <div className='flex flex-col md:flex-row items-center'>
+        <div className='order-2 md:order-1 md:w-1/2'>
           <h1 className='text-[#5E5E5E] text-[32px] md:text-[40px] font-bold'>
             Collaborate, Create and <span className='text-[#FFC107]'>Grow</span>
           </h1>
@@ -50,19 +50,18 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-        <div className='order-1 md:order-2 w-full md:w-1/2 flex justify-center'>
+        <div className='order-1 md:order-2 w-full md:w-1/2 flex justify-start md:justify-center'> {/* Changed justify-center to justify-start */}
           <img src={heroImage} alt='hero' className='w-full max-w-[400px] md:max-w-none' />
         </div>
       </div>
       <div className='flex items-center justify-between mt-8 p-4 md:p-8 shadow-xl bg-[#EEF5F1]'>
-  <h4 className='font-bold text-[22px] md:text-[28px] text-[#393939]'>Trusted By:</h4>
-  <img 
-    src={brands} 
-    alt='brands logos' 
-    className='max-w-full h-auto w-[200px] md:w-[300px] lg:w-auto' // Adjusted width
-  />
-</div>
-
+        <h4 className='font-bold text-[22px] md:text-[28px] text-[#393939]'>Trusted By:</h4>
+        <img 
+          src={brands} 
+          alt='brands logos' 
+          className='max-w-full h-auto w-[200px] md:w-[300px] lg:w-auto' // Adjusted width
+        />
+      </div>
     </section>
   );
 };

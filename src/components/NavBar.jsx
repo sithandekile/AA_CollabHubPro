@@ -4,7 +4,7 @@ import logo from '../assets/CollabHub.png';
 import { FaRegTimesCircle } from 'react-icons/fa';
 import { FaRoadBarrier } from 'react-icons/fa6';
 
-export const Navbar = () => {
+export const Navbar = ({ onHomeClick }) => {
   const [isDisplayed, setIsDisplayed] = useState(false);
 
   return (
@@ -13,7 +13,7 @@ export const Navbar = () => {
         <img src={logo} alt='Nav logo' />
       </div>
       <div className='md:flex hidden space-x-6 text-[20px]'>
-        <NavLink to='/'>Home</NavLink>
+        <NavLink to='/' onClick={onHomeClick}>Home</NavLink>
         <NavLink to='/About-us'>About us</NavLink>
         <NavLink to='/projects'>Projects</NavLink>
       </div>
@@ -32,9 +32,9 @@ export const Navbar = () => {
       </div>
       {isDisplayed && (
         <div className='absolute top-full left-0 right-0 md:hidden flex flex-col items-center bg-white py-2 space-y-2 shadow-md'>
-          <NavLink to='/'>Home</NavLink>
-          <NavLink to='/About-us'>About us</NavLink>
-          <NavLink to='/projects'>Projects</NavLink>
+          <NavLink to='/' onClick={() => { onHomeClick(); setIsDisplayed(false); }}>Home</NavLink>
+          <NavLink to='/About-us' onClick={() => setIsDisplayed(false)}>About us</NavLink>
+          <NavLink to='/projects' onClick={() => setIsDisplayed(false)}>Projects</NavLink>
           <div className='flex flex-col space-y-2'>
             <Link to='/login' className='border-2 rounded-md border-[#174A33] text-[#174A33] p-2 w-[150px]'>
               Log-in
