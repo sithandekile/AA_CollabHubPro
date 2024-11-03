@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import logo from '../assets/CollabHub.png';
-import { FaRegTimesCircle } from 'react-icons/fa';
-import { FaRoadBarrier } from 'react-icons/fa6';
+import { IoMdMenu,IoMdClose } from "react-icons/io";
 
 export const Navbar = ({ onHomeClick }) => {
   const [isDisplayed, setIsDisplayed] = useState(false);
@@ -27,7 +26,7 @@ export const Navbar = ({ onHomeClick }) => {
       </div>
       <div className='md:hidden'>
         <button onClick={() => setIsDisplayed(!isDisplayed)}>
-          {isDisplayed ? <FaRegTimesCircle size={20}/> : <FaRoadBarrier size={20}/>}
+          {isDisplayed ? <IoMdMenu size={20}/> : <IoMdClose size={20}/>}
         </button>
       </div>
       {isDisplayed && (

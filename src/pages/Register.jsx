@@ -164,7 +164,7 @@ export const Register = () => {
 
           <div className='pt-4 text-sm text-center'>
             <span>Already have an account?</span>
-            <Link to='/login' className='ml-2 text-green-600'>Login</Link>
+            <Link to='/login' className='ml-2 text-[#174A33]'>Login</Link>
           </div>
         </div>
       </form>
