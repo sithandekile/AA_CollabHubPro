@@ -26,7 +26,7 @@ export const Navbar = ({ onHomeClick }) => {
       </div>
       <div className='md:hidden'>
         <button onClick={() => setIsDisplayed(!isDisplayed)}>
-          {isDisplayed ? <IoMdMenu size={20}/> : <IoMdClose size={20}/>}
+          {isDisplayed ? <IoMdClose size={20}/>: <IoMdMenu size={20}/> }
         </button>
       </div>
       {isDisplayed && (
