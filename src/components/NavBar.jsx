@@ -3,16 +3,16 @@ import { NavLink, Link } from 'react-router-dom';
 import logo from '../assets/CollabHub.png';
 import { IoMdMenu,IoMdClose } from "react-icons/io";
 
-export const Navbar = ({ onHomeClick }) => {
+export const Navbar = () => {
   const [isDisplayed, setIsDisplayed] = useState(false);
 
   return (
-    <nav className='fixed z-50 top-0 right-0 left-0 flex justify-between items-center shadow-md px-6 bg-white h-10'>
-      <div>
+    <nav className='fixed z-50 top-0 right-0  left-0 flex justify-between items-center shadow-md px-6 bg-white h-10'>
+      <Link to='/'>
         <img src={logo} alt='Nav logo' />
-      </div>
+      </Link>
       <div className='md:flex hidden space-x-6 text-[20px]'>
-        <NavLink to='/' onClick={onHomeClick}>Home</NavLink>
+        <NavLink to='/' >Home</NavLink>
         <NavLink to='/About-us'>About us</NavLink>
         <NavLink to='/projects'>Projects</NavLink>
       </div>
@@ -31,7 +31,7 @@ export const Navbar = ({ onHomeClick }) => {
       </div>
       {isDisplayed && (
         <div className='absolute top-full left-0 right-0 md:hidden flex flex-col items-center bg-white py-2 space-y-2 shadow-md'>
-          <NavLink to='/' onClick={() => { onHomeClick(); setIsDisplayed(false); }}>Home</NavLink>
+          <NavLink to='/' onClick={() => setIsDisplayed(false)}>Home</NavLink>
           <NavLink to='/About-us' onClick={() => setIsDisplayed(false)}>About us</NavLink>
           <NavLink to='/projects' onClick={() => setIsDisplayed(false)}>Projects</NavLink>
           <div className='flex flex-col space-y-2'>

@@ -1,62 +1,9 @@
 import React, { useState } from 'react';
 import { FaStar } from 'react-icons/fa';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import KapkaImage from '../assets/kapka.png';
-import BelovedImage from '../assets/beloved.png';
-import VeeImage from '../assets/vee.png';
-
+import { testimonialsData } from '../data';
 export const Testimonials = () => {
-  const testimonialsData = [
-    {
-      id: 1,
-      ratings: 5,
-      name: 'Kapka - Product Designer',
-      description: 'CollabHub is the perfect bridge between studying and practice.',
-      image: KapkaImage,
-    },
-    {
-      id: 2,
-      ratings: 5,
-      name: 'Beloved - Frontend Developer',
-      description: 'CollabHub helped me gain real experience that I couldn\'t get from school.',
-      image: BelovedImage,
-    },
-    {
-      id: 3,
-      ratings: 5,
-      name: 'Vee - Product Manager',
-      description: 'I\'ve met many talented people on CollabHub. Collaborating here feels like real-world work experience.',
-      image: VeeImage,
-    },
-    {
-      id: 4,
-      ratings: 5,
-      name: 'Hanna - Product Designer',
-      description: 'CollabHub is the perfect bridge between studying and practice.',
-      image: KapkaImage,
-    },
-    {
-      id: 5,
-      ratings: 5,
-      name: 'Kate - Backend Developer',
-      description: 'CollabHub helped me gain real experience that I couldn\'t get from school.',
-      image: BelovedImage,
-    },
-    {
-      id: 8,
-      ratings: 5,
-      name: 'Joy - Product Manager',
-      description: 'I\'ve met many talented people on CollabHub. Collaborating here feels like real-world work experience.',
-      image: VeeImage,
-    },
-    {
-      id: 7,
-      ratings: 5,
-      name: 'Peter - Software Engineer',
-      description: 'This platform has revolutionized my career development.',
-      image: '', // Add another image
-    },
-  ];
+ 
 
   const [startIndex, setStartIndex] = useState(0);
   const itemsToShow = 3;
@@ -74,7 +21,7 @@ export const Testimonials = () => {
   };
 
   return (
-    <div className="testimonials-container w-[] my-16 bg-[#EEF5F1] flex flex-col items-center max-w-screen-lg mx-auto px-4 py-8">
+    <div className="testimonials-container w-[] my-16 bg-[#EEF5F1] flex flex-col items-center max-w-screen-lg   py-8">
       <div className='text-center mb-8'>
         <h1 className='font-bold text-[40px] text-[#393939]'>What Our Users Say</h1>
         <p className='font-normal text-[20px] text-[#5E5E5E]'>Discover how CollabHub has made a difference in the careers of our users</p>
@@ -101,8 +48,8 @@ export const Testimonials = () => {
 
       {/* Navigation Arrows */}
       <div className="flex justify-center items-center mt-6 space-x-6 ">
-        <IoIosArrowBack onClick={handlePrev} className="cursor-pointer text-2xl text-gray-500 hover:text-gray-700 bg-[#174A33] text-white p-2 rounded-full" />
-        <IoIosArrowForward onClick={handleNext} className="cursor-pointer text-2xl text-gray-500 hover:text-gray-700 bg-[#174A33] text-white p-2 rounded-full" />
+        <IoIosArrowBack onClick={handlePrev} className="cursor-pointer text-2xl hover:text-gray-700 bg-[#174A33] text-white p-2 rounded-full" />
+        <IoIosArrowForward onClick={handleNext} className="cursor-pointer text-2xl  hover:text-gray-700 bg-[#174A33] text-white p-2 rounded-full" />
       </div>
     </div>
   );
