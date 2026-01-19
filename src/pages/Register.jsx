@@ -31,11 +31,8 @@ export const Register = () => {
     } catch (error) {
       console.log(error.message);
     }
-
-    setTimeout(() => {
-      setLoading(false);
-      navigate('/verify');
-    }, 1000);
+    setLoading(false);
+    navigate('/login');
   };
 
   const initialValues = {

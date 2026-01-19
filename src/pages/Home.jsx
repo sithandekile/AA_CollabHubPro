@@ -8,15 +8,11 @@ import { TransformCareer } from '../components/TransformCareer';
 import { Testimonials } from '../components/Testimonials';
 import { Footer } from '../components/Footer';
 
-export const Home = ({ displayContent }) => {
+export const Home = () => {
   return (
     <div>
-      {/* Hero section is always visible */}
-      <Hero />
-
-      {/* Rest of the content, conditionally rendered */}
-      {displayContent && (
-        <>
+      {/* home content */}
+          <Hero />
           <WhoWeAre />
           <HowitWorks />
           <WhyCollabHub />
@@ -24,8 +20,7 @@ export const Home = ({ displayContent }) => {
           <TransformCareer />
           <Testimonials />
           <Footer />
-        </>
-      )}
+        
     </div>
   );
 };
