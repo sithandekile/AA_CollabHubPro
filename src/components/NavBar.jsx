@@ -7,7 +7,7 @@ export const Navbar = () => {
   const [isDisplayed, setIsDisplayed] = useState(false);
 
   return (
-    <nav className='fixed z-50 top-0 right-0  left-0 flex justify-between items-center shadow-md px-6 bg-white h-10'>
+    <nav className='fixed z-50 top-0 right-0 left-0 flex justify-between items-center shadow-md p-8 bg-white h-10'>
       <Link to='/'>
         <img src={logo} alt='Nav logo' />
       </Link>

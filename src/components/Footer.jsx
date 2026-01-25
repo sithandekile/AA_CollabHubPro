@@ -4,7 +4,7 @@ import LOgo from '../assets/FooterLogo.png';
 
 export const Footer = () => {
   return (
-    <div className='relative flex flex-col  md:flex-row text-[#fff] bg-[#174A33] justify-between p-6 h-auto max-w-screen-lg py-8'>
+    <div className='relative flex flex-col  md:flex-row text-[#fff] bg-[#174A33] justify-between p-6 h-auto  py-8'>
       <div className='flex justify-center mb-4 md:mb-0'>
         <img src={LOgo} alt="Logo" />
       </div>

@@ -6,7 +6,7 @@ import avarta from '../assets/avarta.png'
 import avarta1 from '../assets/avarta1.png'
 import avarta2 from '../assets/avarta2.png'
  import avarta3 from '../assets/avarta3.png' 
-import brands from '../assets/Brands.png'
+import brands from '../assets/Brands2.png'
 import avarta4 from '../assets/avarta4.png'
 
 
@@ -54,8 +54,8 @@ import avarta4 from '../assets/avarta4.png'
         <img src={heroImage} alt='hero image'/>
       </div>
     </div>
-    <div className=' items-center mt-8 shadow-xl w-full bg-[#EEF5F1]'>
-      <h4 className='font-bold text-[28px] text-[#393939]'>Trusted By:</h4>
+    <div className='grid grid-cols-1 md:grid-cols-2 items-center mt-8 p-8 shadow-xl w-full bg-[#EEF5F1]'>
+      <h4 className='font-bold text-2xl md:text-3xl text-[#393939]'>Trusted By:</h4>
       <img src={brands} alt='brands logos' className='max-w-full h-auto'/>
     </div>
      </section>
