@@ -1,6 +1,6 @@
 import fashion from '../assets/FashionHero.png';
 import food from '../assets/Food.png';
-import ecosystem from '../assets/EcoSystem.png';
+import ecosystem from '../assets/EcoSyStem.png';
 import webstore from '../assets/Webstore.png';
 import travel from '../assets/Travel.png';
 import fashion2 from '../assets/Fashion2.png';
