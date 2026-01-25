@@ -16,7 +16,7 @@ const validationSchema = yup.object().shape({
 
 export const Login = () => {
   const [togglePassword, setTogglePassword] = useState(false); // State to toggle password visibility
-  const [loading, setLoading] = useState(false); // State to handle loading
+  const [loading, setLoading] = useState(false); 
   const navigate = useNavigate();
 
   // Toggle password visibility
@@ -26,16 +26,14 @@ export const Login = () => {
 
   const onSubmit = async (values) => {
     setLoading(true);
-    console.log(values); // This is where authentication will take place
+    console.log(values);
     try {
       await axios.post('url', values);
+      navigate('/signupchoice')
     } catch (error) {
       console.log(error.message);
     }
-    setTimeout(() => {
-      setLoading(false);
-      navigate('/verify');
-    }, 1000);
+   
   };
 
   const initialValues = {
