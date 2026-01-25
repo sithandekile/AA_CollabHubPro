@@ -3,7 +3,7 @@ import food from '../assets/Food.png';
 import ecosystem from '../assets/EcoSyStem.png';
 import webstore from '../assets/Webstore.png';
 import travel from '../assets/Travel.png';
-import fashion2 from '../assets/Fashion2.png';
+import fashion2 from '../assets/fashion2.png';
 
 export const projects=[
           { img: fashion, title: "Fashion Webstore", description: "Aesthetic and functional fashion web store.", roles: "PM, Developers, Designers" },
