@@ -91,7 +91,7 @@ export const DashProjects = () => {
             <h2 className="text-xl font-semibold">{project.title}</h2>
             <p className="text-gray-600">Description: {project.description}</p>
             <p className="text-[#B89900] mb-5">Roles available: {project.roles}</p>
-            <Link to={`/projects/${id}`} className="bg-[#174A33] text-white py-2 px-4 rounded-md hover:bg-[#66dea8]" onClick={() => navigate('/projects/:id')}>View</Link>
+            <Link to={`/project/${project.id}`} className="bg-[#174A33] text-white py-2 px-4 rounded-md hover:bg-[#66dea8]" onClick={() => navigate('/projects/:id')}>View</Link>
           </div>
           </div>
         ))}

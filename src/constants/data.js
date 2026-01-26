@@ -4,12 +4,25 @@ import ecosystem from '../assets/EcoSyStem.png';
 import webstore from '../assets/Webstore.png';
 import travel from '../assets/Travel.png';
 import fashion2 from '../assets/fashion2.png';
+import KapkaImage from '../assets/kapka.png';
+import BelovedImage from '../assets/beloved.png';
+import VeeImage from '../assets/vee.png';
+import avarta from '../assets/avarta.png'
+import avarta1 from '../assets/avarta1.png'
 
 export const projects=[
-          { img: fashion, title: "Fashion Webstore", description: "Aesthetic and functional fashion web store.", roles: "PM, Developers, Designers" },
-          { img: food, title: "Food Delivery App", description: "Functional food delivery application.", roles: "PM, Developers, Designers" },
-          { img: ecosystem, title: "Ecosystem Project", description: "Ecosystem-focused project.", roles: "PM, Developers, Designers" },
-          { img: webstore, title: "Webstore", description: "An aesthetic and functional web store.", roles: "PM, Developers, Designers" },
-          { img: travel, title: "Travel App", description: "Application for travel enthusiasts.", roles: "PM, Developers, Designers" },
-          { img: fashion2, title: "Fashion Webstore", description: "Application for travel enthusiasts.", roles: "PM, Developers, Designers" },
-        ]
+          { id:1, img: fashion, title: "Fashion Webstore", description: "Aesthetic and functional fashion web store.", roles: "PM, Developers, Designers",category:'fashion' },
+          { id:2, img: food, title: "Food Delivery App", description: "Functional food delivery application.", roles: "PM, Developers, Designers",category:'food' },
+          { id:3, img: ecosystem, title: "Ecosystem Project", description: "Ecosystem-focused project.", roles: "PM, Developers, Designers", category:"ecosystem"},
+          { id:4, img: webstore, title: "Webstore", description: "An aesthetic and functional web store.", roles: "PM, Developers, Designers",category:'ecommerce' },
+          { id:5, img: travel, title: "Travel App", description: "Application for travel enthusiasts.", roles: "PM, Developers, Designers",category:'travel' },
+          { id:6, img: fashion2, title: "Fashion Webstore", description: "Application for travel enthusiasts.", roles: "PM, Developers, Designers",categoty:'shopfy' },
+        ];
+
+export const members=[
+  { id:1, img: KapkaImage, name: "Hannah Florence", role: "UI/UX Designer" },
+  { id:2, img: BelovedImage, name: "Thande Ndlovu", role: "Frontend Developer" },
+  { id:4, img: VeeImage, name: "kathreen Doe", role: "Backend Developer" },
+  { id:5, img: avarta, name: "Vhee Smith", role: "Product Manager" },
+  { id:6, img: avarta1, name: "Brigdet ", role: "Ai Developer" },
+];
