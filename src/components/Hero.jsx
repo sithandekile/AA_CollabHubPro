@@ -54,11 +54,10 @@ import avarta4 from '../assets/avarta4.png'
         <img src={heroImage} alt='hero image'/>
       </div>
     </div>
-    <div className='grid grid-cols-1 md:grid-cols-2 items-center mt-8 p-8 shadow-xl w-full bg-[#EEF5F1]'>
-      <h4 className='font-bold text-2xl md:text-3xl text-[#393939]'>Trusted By:</h4>
-      <img src={brands} alt='brands logos' className='max-w-full h-auto'/>
+    <div className='flex items-center mt-8 md:py-10 px-2 shadow-xl w-full bg-[#EEF5F1]'>
+      <h4 className='font-bold text-2xl md:text-3xl mr-2 text-[#393939]'>Trusted By:</h4>
+      <img src={brands} alt='brands logos' className=''/>
     </div>
      </section>
    )
  }
- 

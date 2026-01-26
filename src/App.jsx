@@ -18,7 +18,7 @@ import {Portfolio} from './pages/portfolio'
 import {Settings} from './pages/settings'
 import {HelpCenter} from './pages/help'
 import {Logout} from './pages/logout'
-
+import { ProjectInfo } from './pages/projectInfo';
 
 function App() {
   // const [displayContent, setDisplayContent] = useState(false);
@@ -40,6 +40,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/signupchoice" element={<SignUpChoice />} />
           <Route path="/verify" element={<Verify />} /> 
+          <Route path="project/:id" element={<ProjectInfo/>}/>
           <Route path="/dashboard" element ={<Dashboard/>}>
           <Route path="profile" element ={<Profile/>}/>
           <Route path="dash-projects" element ={<DashProjects/>}/>
