@@ -9,6 +9,10 @@ import BelovedImage from '../assets/beloved.png';
 import VeeImage from '../assets/vee.png';
 import avarta from '../assets/avarta.png'
 import avarta1 from '../assets/avarta1.png'
+import image from '../assets/image.png'
+import image1 from '../assets/FooterImage.png'
+import image2 from '../assets/FooterImage1.png'
+import image3 from '../assets/FooterImage2.png'
 
 export const projects=[
           { id:1, img: fashion, title: "Fashion Webstore", description: "Aesthetic and functional fashion web store.", roles: "PM, Developers, Designers",category:'fashion' },
@@ -26,3 +30,13 @@ export const members=[
   { id:5, img: avarta, name: "Vhee Smith", role: "Product Manager" },
   { id:6, img: avarta1, name: "Brigdet ", role: "Ai Developer" },
 ];
+
+export const roleCard=[
+  {img:image1,role:'Product Manager'},
+  {img:image2,role:'Frontend Developer'},
+  {img:image3,role:'Ui/Ux Designer'},
+  {img:image2,role:'Frontend Developer'},
+  {img:image3,role:'Ui/Ux Designer'},
+  {img:image1,role:'Scrum Master'},
+  {img:image,role:'Backend Developer'},
+]

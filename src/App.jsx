@@ -11,6 +11,7 @@ import { SignUpChoice } from './pages/SignUpChoice';
 import { Verify } from './pages/Verification';
 import {Dashboard} from './pages/dashboard'
 import {Profile} from './pages/profile'
+import {CreateProject} from './pages/createProject'
 import {DashProjects} from './pages/dashProjects'
 import {Myai} from './pages/myai'
 import {Community} from './pages/community'
@@ -21,11 +22,6 @@ import {Logout} from './pages/logout'
 import { ProjectInfo } from './pages/projectInfo';
 
 function App() {
-  // const [displayContent, setDisplayContent] = useState(false);
-
-  const handleHomeClick = () => {
-    setDisplayContent(true); // Show content when "Home" is clicked
-  };
 
   return (
     <div className="mx-8">
@@ -36,6 +32,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path='/create-project' element ={<CreateProject/>}/>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/signupchoice" element={<SignUpChoice />} />
